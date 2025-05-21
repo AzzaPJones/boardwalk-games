@@ -100,6 +100,26 @@ h2 {
     border: none;
 }
 
+/*Events section*/
+#events .table {
+    /* events table font size small enough that 
+      the table doesn't overflow on xs screens. 
+      Size set back to 1rem in a media query 
+      for sm screens and up */
+    font-size: 0.7rem;
+}
+
+.student-discount {
+    background-color: var(--highlight-color);
+    font-weight: bold;
+    color: white;
+    display: block;
+    max-width: 300px;
+    margin: auto;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+}
+
 /*Footer /Contact section */
 #contact {
     background-color: var(--primary-color);
@@ -148,6 +168,20 @@ h2 {
 } */
 
 /*Media queries*/
+
+/* Small screens and up */
+@media screen and (min-width: 576px) {
+
+    /* increase font size in events table when screen size is large enough */
+    #events .table {
+        font-size: 1rem;
+    }
+
+    .student-discount {
+        font-size: 1rem;
+    }
+}
+
 /*Medium screen sizes (tablets, 768px and up)*/
 @media screen and (min-width:768px) {
 
@@ -166,7 +200,7 @@ h2 {
     }
 }
 
-/*Medium screen sizes (XL desktops, 1200px and up)*/
+/*Large screen sizes (XL desktops, 1200px and up)*/
 @media screen and (min-width:1200px) {
 
     /*Make all cards the same height for consistency*/
@@ -175,7 +209,7 @@ h2 {
     }
 }
 
-/*Medium screen sizes (XXL desktops, 1400px and up)*/
+/*large screen sizes (XXL desktops, 1400px and up)*/
 @media screen and (min-width:1400px) {
 
     /*Make all cards the same height for consistency*/
